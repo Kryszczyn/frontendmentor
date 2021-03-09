@@ -142,9 +142,4 @@ body{
         top:-10px;
         left:50px;
     }
-
-  }
-  
-  @media screen and (min-width: 376px) and (max-width: 1440px) {
-    #my-content { display: none; }
-  }
+}
