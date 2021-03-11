@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(210, 46%, 95%)
+}
+main{
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 850px;
+    height:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left, .right{
+    border-radius: 10px;
+}
+.left{
+    height:100%;
+}
+.left img{
+    height:100%;
+}
+.right{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.big-text, .small-text, .about{
+    width: 80%;
+}
+.big-text{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.small-text{
+    font-size: 13px;
+}
+.about{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.author-container{
+    
+    display: flex;
+    align-items: center;
+}
+.author-container img {
+    height:60px;
+    border-radius: 50%;
+}
+.author-name{
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.author-name p:nth-child(1){
+    font-weight: 700;
+}
+.author-name p:nth-child(2){
+    color:hsl(212, 23%, 69%);
+    font-weight: 700;
+}
+.share-btn{
+    background-color: hsl(210, 46%, 95%);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+.share-container{
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding:15px 30px;
+    border-radius: 10px;
+    top:-70px;
+    left:-104px;
+    background-color: hsl(217, 19%, 35%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tooltip::before{
+    content:'';
+    position: absolute;
+    bottom:-10px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid hsl(217, 19%, 35%);
+}
+.tooltip div{
+    margin: 0 7px;
+    cursor: pointer;
+}
+.share-text p{
+    letter-spacing: 5px;
+    color:hsl(210, 46%, 95%);
+    font-size: 13px;
+}
+.about-mobile{display: none;}
+.show{display: flex;}
+.hide{display:none;}
+.active{background-color: hsl(217, 19%, 35%);}
+
+@media screen and (min-width: 0px) and (max-width: 775px) {
+    .container{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        width:100%;
+    }
+    .right{
+        padding: 20px 0;
+    }
+    .about-mobile{
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color: hsl(217, 19%, 35%);
+        height:100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .share-mobile-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .share-mobile-links div{
+        margin:0 10px;
+    }
+    .share-mobile-btn{
+        background-color: hsl(210, 46%, 95%);
+        cursor: pointer;
+        padding: 5px 7px;
+        border-radius: 50%;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
