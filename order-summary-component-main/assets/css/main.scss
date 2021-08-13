@@ -1,0 +1,140 @@
+@import './addonds.scss';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/pattern-background-desktop.svg');
+    background-color: $paleBlue;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .app{
+        width: 500px;
+        height: 700px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .app__top{
+            width: 100%;
+            height: 30%;
+            background-image: url('../../images/illustration-hero.svg');
+            border-radius: 20px 20px 0 0;
+        }
+        .app__bottom{
+            width: 100%;
+            height: 70%;
+            background-color: #fff;
+            border-radius: 0 0 20px 20px;
+            text-align: center;
+            padding: 20px;
+            .bottom__title-container{
+                width: 100%;
+                .title__item{
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding: 20px 0;
+                }
+            }
+            .bottom__description-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                .description__item{
+                    width: 75%;
+                    font-size: $fontSize;
+                    color: $desaturatedBlue;
+                }
+            }
+            .bottom__product-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .bottom__product-item{
+                    width: 90%;
+                    background-color: $veryPaleBlue;
+                    padding: 20px 0;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .product__left{
+                        margin-left: 40px;
+                        display: flex;
+                        align-items: center;
+                        .product__image{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-image: url('../../images/icon-music.svg');
+                            background-position: center center;
+                            margin-right: 20px;
+                        }
+                        .product__info-container{
+                            .info__title{
+                                font-weight: 700;
+                            }
+                            .info__price{
+                                color: $desaturatedBlue;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    
+                    .product__right{
+                        margin-right: 20px;
+                        
+                        .product__change-container{
+                            .change__item{
+                                color: $brightBlue;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .bottom__accept{
+                width: 90%;
+                margin: 50px 0;
+                padding: 15px 0;
+                border:none;
+                background-color: $brightBlue;
+                color: #fff;
+                border-radius: 10px;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+            .bottom__cancel{
+                text-decoration: none;
+                color: $desaturatedBlue;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
